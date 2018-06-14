@@ -1,0 +1,7 @@
+project(simpletest)
+
+include_directories(/usr/local/include/)
+link_directories(/usr/lib/)
+
+add_executable(simpletest unitTest.cpp)
+target_link_libraries (simpletest cppunit)
